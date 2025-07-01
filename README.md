@@ -55,7 +55,7 @@ After training, the YOLOv5 model achieved outstanding results:
 - **mAP@0.5:0.95**: 94.8%
 
 Here is a sample output of the YOLOv5 drowsiness detection in action:
-![Sample Output](yolo_image.jpg)
+![Sample Output](yolo_image.png)
 
 Class-wise breakdown:
 
