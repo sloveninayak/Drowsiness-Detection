@@ -41,6 +41,32 @@ Once trained, the model was deployed in a Python application using OpenCV to det
 
 !pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 ### Clone YOLOv5 repo and install dependencies
-!git clone https://github.com/ultralytics/yolov5
-!cd yolov5
-!pip install -r requirements.txt
+- !git clone https://github.com/ultralytics/yolov5
+- !cd yolov5
+- !pip install -r requirements.txt
+
+## 📊 Understanding the Metrics
+
+After training, the YOLOv5 model achieved outstanding results:
+
+- **Precision**: 99.7%
+- **Recall**: 100%
+- **mAP@0.5**: 99.5%
+- **mAP@0.5:0.95**: 94.8%
+
+Class-wise breakdown:
+
+| Class   | Precision | Recall | mAP@0.5 | mAP@0.5:0.95 |
+|---------|-----------|--------|---------|--------------|
+| Awake   | 0.997     | 1.00   | 0.995   | 0.959        |
+| Drowsy  | 0.997     | 1.00   | 0.995   | 0.937        |
+
+📂 Results are saved in `runs/train/exp/`.
+
+## 📢 Acknowledgements
+
+This project wouldn’t have been possible without the amazing open-source community! Huge thanks to the developers and contributors behind:
+- [Ultralytics YOLOv5](https://github.com/ultralytics/yolov5)  
+- [OpenCV](https://opencv.org/)  
+- [PyTorch](https://pytorch.org/)  
+- [LabelImg](https://github.com/tzutalin/labelImg)
